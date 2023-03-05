@@ -1,2 +1,4 @@
 # elspectra
-![Screenshot 2023-03-05 222619](https://user-images.githubusercontent.com/101394814/222978409-5e9c8e9a-6bb0-4ef8-9b02-20fc83e5568d.png)
+##Cats Clicker App
+![z](https://user-images.githubusercontent.com/101394814/222978685-611c7aae-9ca0-48c3-b383-552deede3b59.png)
+![z1](https://user-images.githubusercontent.com/101394814/222978733-56470151-38fe-4c09-94b7-5a67cdf401dd.png)
