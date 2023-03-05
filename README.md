@@ -1,7 +1,7 @@
 # El Spectra #
 # Cats Clicker App #
 
-### Deployed Link :- https://6404e6b4f041a34d70201ea7--astounding-taiyaki-f3e1ad.netlify.app/ ###
+Deployed Link :- https://6404e6b4f041a34d70201ea7--astounding-taiyaki-f3e1ad.netlify.app/ 
 
 
 ![z](https://user-images.githubusercontent.com/101394814/222978685-611c7aae-9ca0-48c3-b383-552deede3b59.png)
