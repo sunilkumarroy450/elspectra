@@ -38,10 +38,10 @@ const Home = () => {
       >
         <Box
           height={"lg"}
-          style={{ overflow: "scroll" }}
+          style={{ overflow: "scroll", overflowX: "hidden" }}
           w={"20%"}
           paddingTop={".8rem"}
-          borderBottom={"Scrollbar"}
+          // borderBottom={"Scrollbar"}
         >
           <VStack spacing={1} align="stretch">
             <Divider />
