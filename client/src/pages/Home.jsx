@@ -41,7 +41,6 @@ const Home = () => {
           style={{ overflow: "scroll", overflowX: "hidden" }}
           w={"20%"}
           paddingTop={".8rem"}
-          // borderBottom={"Scrollbar"}
         >
           <VStack spacing={1} align="stretch">
             <Divider />
