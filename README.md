@@ -12,11 +12,5 @@ BASE_URL='https://joyous-blue-sunglasses.cyclic.app'
 
 
 
-/* 
-//name,image,catCount is Coming from destructring of props
- // Jab Parents state ka props ko child components ko milta hai aur hm use initial state me set krte hai.
-// Lekin agar hm us state ko parent me kr dete hai aur m chahate hai ki jo parent me jo state upadte hua hai,
-  // wo updated state hamre child component ke initial state me v update jo jaye to ,
-  //yesa krne k liye useEffect me state ko update/set krna padega, aur parents se aaye props  ko as a dependency
-  // dena hoga kyuki props mera change ho jata hai
-*/
+
+
