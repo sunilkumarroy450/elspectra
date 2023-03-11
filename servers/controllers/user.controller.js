@@ -3,9 +3,12 @@ const UserModel = require("../models/user.model");
 const router = express.Router();
 //get
 router.get("/", async (req, res) => {
-  const allCatsData = await UserModel.find();
-  console.log(allCatsData);
-  return res.status(200).send(allCatsData);
+  try {
+    const allCatsData = await UserModel.find();
+    return res.status(200).send(allCatsData);
+  } catch (error) {
+    return res.send({ msg: "Something went wrong" });
+  }
 });
 //post
 router.post("/post", async (req, res) => {
@@ -18,7 +21,7 @@ router.post("/post", async (req, res) => {
       nickName,
       catCount,
     });
-    console.log(cats,"Cats Data")
+    console.log(cats, "Cats Data");
     await cats.save();
     return res.status(201).send("Cats New Data Created Succesfully");
   } catch (error) {
@@ -43,12 +46,16 @@ router.patch("/update/:id", async (req, res) => {
   const { id } = req.params;
   const { name, image, catCount } = req.body;
   try {
-    const updatedCats = await UserModel.findByIdAndUpdate(id, {
-      name,
-      image,
-      catCount,
-    },{new:true});
-    console.log(updatedCats,"Upadted Cats Data")
+    const updatedCats = await UserModel.findByIdAndUpdate(
+      id,
+      {
+        name,
+        image,
+        catCount,
+      },
+      { new: true }
+    );
+    console.log(updatedCats, "Upadted Cats Data");
     return res.status(200).send(updatedCats);
   } catch (error) {
     res.status(304).send({ msg: error.message });
