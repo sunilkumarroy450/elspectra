@@ -12,7 +12,7 @@ const getData = async () => {
 
 const Home = () => {
   const [catsData, setCatsData] = useState([]);
-  const [activeInNav, setActiveInNav] = useState({ index: -1, activeCat: {} }); //object me order matter nahi krta hai
+  const [activeInNav, setActiveInNav] = useState({ index: -1, activeCat: {} }); 
   useEffect(() => {
     getData().then((res) => {
       setCatsData(res);
