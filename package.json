@@ -1,0 +1,20 @@
+{
+  "name": "elspectra",
+  "version": "1.0.0",
+  "description": "<a  href=\"https://6404e6b4f041a34d70201ea7--astounding-taiyaki-f3e1ad.netlify.app/\" >Deployed Link</a>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SunilKumarRoy450/elspectra.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SunilKumarRoy450/elspectra/issues"
+  },
+  "homepage": "https://github.com/SunilKumarRoy450/elspectra#readme"
+}
