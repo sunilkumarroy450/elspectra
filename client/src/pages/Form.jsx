@@ -32,7 +32,7 @@ const Form = ({ activeInNav, setActiveInNav, setCatsData, getData }) => {
 
   const updatingCatForm = async () => {
     try {
-      fetch(`http://localhost:8080/cats/update/${_id}`, {
+      fetch(`https://joyous-blue-sunglasses.cyclic.app/cats/update/${_id}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -64,11 +64,11 @@ const Form = ({ activeInNav, setActiveInNav, setCatsData, getData }) => {
               activeCat: res[activeInNav?.index],
             });
           });
-        }, 100);
+        }, 10);
       });
     } else {
       try {
-        fetch(`http://localhost:8080/cats/post`, {
+        fetch(`https://joyous-blue-sunglasses.cyclic.app/cats/post`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(formValue),
@@ -77,7 +77,7 @@ const Form = ({ activeInNav, setActiveInNav, setCatsData, getData }) => {
           getData().then((res) => {
             setCatsData(res);
           });
-        }, 100);
+        }, 10);
         setFlag(false);
       } catch (error) {
         console.log(error);

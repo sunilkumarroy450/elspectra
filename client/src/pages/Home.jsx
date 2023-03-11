@@ -5,7 +5,7 @@ import Form from "./Form";
 import Cards from "./Cards";
 
 const getData = async () => {
-  let res = await fetch(`http://localhost:8080/cats`);
+  let res = await fetch(`https://joyous-blue-sunglasses.cyclic.app/cats`);
   let data = await res.json();
   return data;
 };
