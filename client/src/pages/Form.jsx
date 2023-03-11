@@ -64,7 +64,7 @@ const Form = ({ activeInNav, setActiveInNav, setCatsData, getData }) => {
               activeCat: res[activeInNav?.index],
             });
           });
-        }, 10);
+        }, 200);
       });
     } else {
       try {
@@ -77,7 +77,7 @@ const Form = ({ activeInNav, setActiveInNav, setCatsData, getData }) => {
           getData().then((res) => {
             setCatsData(res);
           });
-        }, 10);
+        }, 200);
         setFlag(false);
       } catch (error) {
         console.log(error);
