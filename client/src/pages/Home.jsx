@@ -3,9 +3,9 @@ import { Box, VStack, Tag, Divider } from "@chakra-ui/react";
 import CardDetail from "./CardDetail";
 import Form from "./Form";
 import Cards from "./Cards";
-
+//Base url-"https://puzzled-toad-kilt.cyclic.app/cats"
 const getData = async () => {
-  let res = await fetch(`https://joyous-blue-sunglasses.cyclic.app/cats`);
+  let res = await fetch(`https://puzzled-toad-kilt.cyclic.app/cats`);
   let data = await res.json();
   return data;
 };

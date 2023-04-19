@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Text, Stack, Heading, CardBody, Card, Image } from "@chakra-ui/react";
 // import { useRef } from "react";
 
-// const BASE_URL='https://joyous-blue-sunglasses.cyclic.app'
+// const BASE_URL='https://puzzled-toad-kilt.cyclic.app/cats'
  
 const CardDetail = ({
   data,
@@ -20,7 +20,7 @@ const CardDetail = ({
   //
   const updatingCatCount = async () => {
     try {
-      fetch(`https://joyous-blue-sunglasses.cyclic.app/cats/update/${data._id}`, {
+      fetch(`https://puzzled-toad-kilt.cyclic.app/cats/update/${data._id}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

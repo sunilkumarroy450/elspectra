@@ -8,8 +8,6 @@ import {
   SimpleGrid,
   CardHeader,
   CardFooter,
-  Button,
-  Tag,
   Badge,
 } from "@chakra-ui/react";
 

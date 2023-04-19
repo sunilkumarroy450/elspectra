@@ -28,7 +28,7 @@ const Form = ({ activeInNav, setActiveInNav, setCatsData, getData }) => {
 
   const updatingCatForm = async () => {
     try {
-      fetch(`https://joyous-blue-sunglasses.cyclic.app/cats/update/${_id}`, {
+      fetch(`https://puzzled-toad-kilt.cyclic.app/cats/update/${_id}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -64,7 +64,7 @@ const Form = ({ activeInNav, setActiveInNav, setCatsData, getData }) => {
       });
     } else {
       try {
-        fetch(`https://joyous-blue-sunglasses.cyclic.app/cats/post`, {
+        fetch(`https://puzzled-toad-kilt.cyclic.app/cats/post`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(formValue),
